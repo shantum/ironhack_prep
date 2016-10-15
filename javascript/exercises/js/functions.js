@@ -94,11 +94,16 @@ array_lengths.push( findLongestWord( ["Red", "Blue", "Green"] ) );
 //<place to add more lines>, read next commented text and you will understand
 
 console.log( "These are the longest lengths of each group: " + array_lengths );
-console.log( calculateAverage( array_lengths ) === 6 && "The average of longest lengths is: " + calculateAverage( array_lengths ))
+console.log( calculateAverage( array_lengths ) === 2 && "The average of longest lengths is: " + calculateAverage( array_lengths ))
 
 function calculateAverage( array )
-{
-	return( "Not implemented yet" )
+{ 	len = array_lengths.length;
+	average = 0;
+	for (i=0; i < len; i++) {
+		average += array_lengths[i];
+		average = average / len;
+		return average;
+	}
 }
 
 // Now add more lengths to the array_lengths. You have to do it where <place to add more lines> is written. 
