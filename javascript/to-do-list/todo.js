@@ -14,13 +14,18 @@ window.onload = function() {
 
   function addToDoItem() {
   var input = document.getElementById("todo-input").value;
-  var newEntry = document.createElement("li")
+  var newEntry = document.createElement("li");
   var todoList = document.getElementById("todo-list-items");
   newEntry.appendChild(document.createTextNode(input));
   todoList.appendChild(newEntry);
     }
 
   function markAsDone() {
-    doneItem = document.getElementById("todo-list-items")
-
+    element = document.getElementById("todo-list-items");
+    doneItem = element.getElementsByTagName("li")[0];
+    doneList = document.getElementById("done-list-items");
+    newEntry = document.createElement("li");
+    newEntry.appendChild(document.createTextNode(doneItem.innerHTML));
+    doneList.appendChild(newEntry);
+    doneItem.parentNode.removeChild(doneItem);
   }}
