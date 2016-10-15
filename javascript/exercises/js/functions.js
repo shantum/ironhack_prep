@@ -15,7 +15,7 @@
 // If your code works, the last three equalities will be "true"
 
 
-
+/*
 
 function dniLetter( dni ) {
 	var lockup = 'TRWAGMYFPDXBNJZSQVHLCKE';
@@ -33,7 +33,7 @@ console.log( dniLetter( 34667892 ) === 'S');
 console.log( dniLetter( 92234488 ) === 'A');
 
 
-
+*/
 
 //EXERCISE 2
 //
@@ -42,11 +42,12 @@ console.log( dniLetter( 92234488 ) === 'A');
 // Improve the exercise above to be able to perform this new functionality
 // Of course it has to keep working as usual with right inputs.
 
-
+/*
 
 console.log( dniLetter( -1 ) === 'Invalid parameter');
 console.log( dniLetter( "A1234567" ) === 'Invalid parameter');
 
+*/
 
 
 
@@ -57,17 +58,24 @@ console.log( dniLetter( "A1234567" ) === 'Invalid parameter');
 // Open the console and reload the index page to see the result of the code.
 // Write a function that takes an array of words and returns the length of the longest one.
 
-/*
+
 
 function findLongestWord( array_words ){
-
+	var len = array_words.length;
+	var maxlen = 0;
+	var score = []
+	for (var i=0; i < len; i++) {
+		score.push(array_words[i].length)
+	}
+	maxlen = Math.max.apply(null, score);
+	return maxlen;
 }
 
-console.log( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"] ) ===6 );
+console.log( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"] ) === 6 );
 console.log( findLongestWord( ["Blanka", "Zangief", "Chun Li", "Guile"] ) === 7 );
 console.log( findLongestWord( ["Red", "Blue", "Green"] ) === 5 );
 
-*/
+
 
 //EXERCISE 4
 //
@@ -77,7 +85,7 @@ console.log( findLongestWord( ["Red", "Blue", "Green"] ) === 5 );
 // You have to complete the calculateAverage function (it is a few lines below), and it has
 // to return the average of every number in a array instead of the "Not implemented yet" message.
 
-/*
+
 
 var array_lengths = [];
 array_lengths.push( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"]) );
@@ -97,8 +105,6 @@ function calculateAverage( array )
 // You can use this structure: array_lengths.push( findLongestWord( [<add some elements>] ) );
 // Don't foget to add words to the array. The longer the better!
 // Now reload the page and see how changed the average.
-
-*/
 
 
 //EXERCISE 5
