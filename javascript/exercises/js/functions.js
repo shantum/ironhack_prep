@@ -21,7 +21,10 @@ function dniLetter( dni ) {
 	var lockup = 'TRWAGMYFPDXBNJZSQVHLCKE';
 	var result = '';
 	remainder = dni % 23
-	result = lockup.charAt(remainder).toString();
+	console.log(remainder);
+	if (isNaN(remainder) || remainder < 0) {
+		result = 'Invalid parameter'
+	} else {result = lockup.charAt(remainder).toString()};
 	return result;
 }
 
@@ -39,12 +42,12 @@ console.log( dniLetter( 92234488 ) === 'A');
 // Improve the exercise above to be able to perform this new functionality
 // Of course it has to keep working as usual with right inputs.
 
-/*
+
 
 console.log( dniLetter( -1 ) === 'Invalid parameter');
 console.log( dniLetter( "A1234567" ) === 'Invalid parameter');
 
-*/
+
 
 
 //EXERCISE 3
