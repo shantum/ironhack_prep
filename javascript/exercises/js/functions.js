@@ -58,7 +58,7 @@ console.log( dniLetter( "A1234567" ) === 'Invalid parameter');
 // Open the console and reload the index page to see the result of the code.
 // Write a function that takes an array of words and returns the length of the longest one.
 
-
+/*
 
 function findLongestWord( array_words ){
 	var len = array_words.length;
@@ -75,7 +75,7 @@ console.log( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"] ) 
 console.log( findLongestWord( ["Blanka", "Zangief", "Chun Li", "Guile"] ) === 7 );
 console.log( findLongestWord( ["Red", "Blue", "Green"] ) === 5 );
 
-
+*/
 
 //EXERCISE 4
 //
@@ -85,7 +85,7 @@ console.log( findLongestWord( ["Red", "Blue", "Green"] ) === 5 );
 // You have to complete the calculateAverage function (it is a few lines below), and it has
 // to return the average of every number in a array instead of the "Not implemented yet" message.
 
-
+/*
 
 var array_lengths = [];
 array_lengths.push( findLongestWord( ["Richie", "Joanie", "Greg", "Marcia", "Bobby"]) );
@@ -114,7 +114,7 @@ function calculateAverage( array )
 
 //EXERCISE 5
 //
-// Restore the comments marks (/* */) of the previous exercises.
+// Restore the comments marks (/* */ //) of the previous exercises.
 // Uncomment this exercise code deleting /* and */ chars
 // Now we are going to save the longest length of every array in a new array called array_lengths
 // Open the console and reload the index page to see the result of the code.
@@ -122,11 +122,53 @@ function calculateAverage( array )
 // As a condition you must use the object freqCounter.
 // Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
 
-/*
+
 
 function charFreq( string ) {
 	freqCounter = {};
-
+	freqCounter['a'] = 0;
+	freqCounter['b'] = 0;
+	freqCounter['c'] = 0;
+	freqCounter['x'] = 0;
+	freqCounter['y'] = 0;
+	freqCounter['z'] = 0;
+	freqCounter['s'] = 0;
+	freqCounter['d'] = 0;
+	freqCounter['f'] = 0;
+	len = string.length;
+	for (i=0; i < len; i++) {
+		switch (string.charAt(i)) {
+	case 'a':
+		freqCounter['a'] += 1;
+		break;
+	case 'b':
+		freqCounter['b'] += 1;
+		break;
+	case 'c':
+		freqCounter['c'] += 1;
+		break;
+	case 'x':
+		freqCounter['x'] += 1;
+		break;
+	case 'y':
+		freqCounter['y'] += 1;
+		break;	
+	case 'z':
+		freqCounter['z'] += 1;
+		break;
+	case 's':
+		freqCounter['s'] += 1;
+		break;
+	case 'd':
+		freqCounter['d'] += 1;
+		break;
+	case 'f':
+		freqCounter['f'] += 1;
+		break;
+	default:
+		console.log('Unexpected Character')
+		break;
+	}
 	}
 	return freqCounter;
 }
@@ -145,7 +187,7 @@ console.log( counter['s'] === 1 );
 console.log( counter.d === 1 );
 console.log( counter['f'] === 1 );
 
-*/
+
 
 
 //BONUS EXERCISE
