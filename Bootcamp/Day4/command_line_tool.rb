@@ -1,7 +1,3 @@
-require "pry"
-require "pry-byebug"
-
-
 class TextApp
   attr_reader :username, :password, :string
 
@@ -63,7 +59,7 @@ class TextApp
     when '5'
       puts "#{string.downcase}"
     when 'exit'
- 	  exit!
+      exit!
     else
       puts "Invalid option. Please try again."
     end
@@ -72,6 +68,6 @@ class TextApp
 end
 
 
-new = TextApp.new('shantum', 'shantumshantum')
+new_app = TextApp.new('shantum', 'shantumshantum')
 
-new.run_app
+new_app.run_app
