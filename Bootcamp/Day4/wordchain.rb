@@ -45,7 +45,7 @@ class WordChain
       if self.check_word(new_word_array.join) == true;
 
         starting_word_array = new_word_array;
-        results << starting_word_array.join
+        unless results.include?(starting_word_array.join); results << starting_word_array.join end
         i += 1
       else i += 1;
       end
@@ -57,4 +57,4 @@ end
 
 puzzle = WordChain.new(dictionary)
 
-puzzle.find_new_chain('mad', 'car')
+puzzle.find_new_chain('duck', 'prom')
