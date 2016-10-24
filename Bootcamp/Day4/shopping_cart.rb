@@ -88,7 +88,6 @@ class Items
     end
     return season
   end
-
 end
 
 
@@ -104,3 +103,4 @@ cart = ShoppingCart.new
 cart.add_to_cart(@watermelon, 2)
 cart.add_to_cart(@apples, 2)
 cart.add_to_cart(@grapes, 4)
+puts cart
