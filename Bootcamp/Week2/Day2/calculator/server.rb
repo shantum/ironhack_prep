@@ -1,9 +1,9 @@
 require "sinatra"
 require_relative "lib/calculator"
 
-calculator = Calculator.new
+@calculator = Calculator.new
 
-get "/" do
+get "/calculate" do
   erb(:calculator)
 end
 
@@ -12,18 +12,15 @@ post "/calculate" do
   second = params[:second_number].to_f
   operation = params['operation']
   if operation == 'addition'
-    result = first + second;
-    "#{first} + #{second} = #{result}"
+    @result = first + second
   elsif operation == "subtraction"
-    result = first - second
-    "#{first} - #{second} = #{result}"
+    @result = first - second
   elsif operation == 'multiplication'
-    result = first * second
-    "#{first} * #{second} = #{result}"
+    @result = first * second
   elsif operation == 'division'
-    result = first / second
-    "#{first} + #{second} = #{result}"
+    @result = first / second
   end
+  erb(:calculator)
 end
 
 get "/add" do

@@ -1,5 +1,8 @@
 class Calculator
+  attr_reader :history
+
   def initialize
+    @history = []
   end
 
   def add(first_num, second_num)
@@ -15,6 +18,6 @@ class Calculator
   end
 
   def divide(first_num, second_num)
-    result = first_num.to_f / second_num.to_f
+    result = first_num.to_f / second_num.to_f 
   end
 end
