@@ -2,20 +2,35 @@
 <html>
     <head>
         <title>All-in-1 | Online Calculator</title>
+
+        <link rel="stylesheet" type="text/css" href="calculator.css">
     </head>
+
     <body>
+        <img src="logo.png" alt="calc_logo" id='logo'>
+
         <h1>All-in-1 Calculator</h1>
+
         <form action="/calculate" method="POST">
-            <label  for="First_Num">First Number:</label>
-            <input  type="number" name="first_number"  id="First_Num"  placeholder="Enter first number here">
-            <label  for="Second_Num">Second Number:</label>
-            <input  type="number" name="second_number" id="Second_Num" placeholder="Enter second number here">
+            <label for="First_Num">First Number:</label>
+
+            <input type="number" name="first_number" id="First_Num" placeholder="Enter first number here">
+
+            <label for="Second_Num">Second Number:</label>
+
+            <input type="number" name="second_number" id="Second_Num" placeholder="Enter second number here">
+
             <button type="submit" name="operation" value="addition">ADD</button>
+
             <button type="submit" name="operation" value="subtraction">SUBTRACT</button>
+
             <button type="submit" name="operation" value="multiplication">MULTIPLY</button>
+
             <button type="submit" name="operation" value="division">DIVIDE</button>
+
             <br></br>
-            <output name='output' for='First_Num, Second_Num'>The result for your calculation is: <%= @result %></output>
+
+            <output name='output' for='First_Num, Second_Num'>The result for your calculation is: <%=@result%></output>
         </form>
     </body>
 </html>
