@@ -48,4 +48,7 @@ class TodoList
 
     def add_task(task)
       @tasks += task.content
+    end
+
+
 end

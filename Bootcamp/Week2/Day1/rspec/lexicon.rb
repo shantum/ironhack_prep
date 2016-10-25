@@ -1,3 +1,5 @@
+gem 'rspec'
+
 class Lexicon
   def eat_t(string)
     string = string.split('')
