@@ -1,6 +1,6 @@
 require 'sinatra'
 
-class HelloWorldApp < Sinatra::Base
+class ToDoListApp < Sinatra::Base
     get '/' do
         'Hello, world!'
     end
@@ -38,7 +38,14 @@ class Task
       @content = string
       @updated_at = Time.now
     end
+end
 
+class TodoList
+    attr_reader :tasks
+    def initialize
+        @tasks = []
+    end
 
-
+    def add_task(task)
+      @tasks += task.content
 end
