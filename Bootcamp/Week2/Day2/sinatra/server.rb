@@ -5,11 +5,16 @@ get '/' do
   "Hi there!"
 end
 
+get '/profile/:user' do
+  @user = params[:user]
+  erb :profile
+end
+
 get '/about' do
-  @name = 'Gorka'
+  @name = 'Shantum'
   erb :about
 end
 
 get '/:user' do
-  @user = params[:user]
+  params[:user]
 end
