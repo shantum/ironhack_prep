@@ -15,11 +15,14 @@ class List
   end
 
   def add_movie(movie)
-    @list[:movie_name] = movie.name
-    @list[:movie_year] = movie.year
+    @list[movie.name] = movie.year
   end
 
   def print_list
-    @list.to_s
+    array = []
+    @list.each do |key, value|
+      array << "#{key} : #{value}"
+    end
+  return array.to_s
   end
 end
