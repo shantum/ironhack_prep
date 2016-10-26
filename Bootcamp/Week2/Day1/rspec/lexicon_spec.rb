@@ -1,8 +1,7 @@
---color
---require 'spec_helper'
---require 'lexicon'
+require 'spec_helper'
+require_relative 'lexicon'
 
-RSpec.describe Lexicon do
+describe Lexicon do
   describe "#eat_t" do
     it "removes every letter t from the input" do
       @lexi = Lexicon.new

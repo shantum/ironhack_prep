@@ -1,0 +1,4 @@
+require "spec_helper"
+require_relative "app"
+require_relative "lib/task"
+require_relative "lib/todolist"

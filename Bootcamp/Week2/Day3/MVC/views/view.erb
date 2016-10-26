@@ -1,0 +1,22 @@
+<head>
+  <title>MOVIE LISTER</title>
+  <link rel="stylesheet" type="text/css" href="view.css">
+</head>
+
+<h1>Movie List</h1>
+<p>A site to make a list of your favorite movies!</p>
+<br>
+<form action="movie_input" method="POST">
+
+  <label for="movie_name"> Enter the move name here: </label>
+  <input type="text" name="movie_name" id="movie_name" placeholder="Type here.">
+
+  <label for="movie_year">Enter the year it was released: </label>
+  <input type="number" name="movie_year" id="movie_year">
+
+  <button type="submit" name="add_to_list" value="add_to_list">Add this movie to my list!</button>
+
+</form>
+<br>
+<h2>Your Movie List:</h2>
+<p><%= @list %></p>
