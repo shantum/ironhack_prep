@@ -43,6 +43,4 @@ class Identifier
   end
 end
 
-password = Identifier.new('shantumgupta@gmail.com', 'shantum@d')
-
 puts password.check_all
