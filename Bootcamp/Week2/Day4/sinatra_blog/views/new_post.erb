@@ -1,0 +1,17 @@
+<head>  </head>
+
+<body>
+  <h2>Create a new post for your blog!</h2>
+
+  <form action="/" method="post">
+    Post Title: <br>
+    <input type="text" name='post_title' value='Untitled Post' placeholder="Enter Title Here"> <br>
+    Post Date: <br>
+    <input type="date" name='post_date' value=<%= @default_date%>> <br>
+    Post Content: <br>
+    <input type="text" name='post_content' value='Blank Post.' placeholder="Enter Content Here"> <br>
+    <button type='submit' name='New Post' value="new_post">
+      Click here to submit the new post!
+    </button>
+  </form>
+</body>

@@ -1,2 +1,7 @@
 gem "rspec"
 gem "sinatra"
+gem 'byebug'
+gem 'guard'
+gem 'guard-rspec'
+gem 'rack'
+gem 'rack-test'
