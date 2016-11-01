@@ -1,10 +1,10 @@
-require "sinatra"
-require_relative "models/blog"
-require_relative "models/post"
+require 'sinatra'
+require_relative 'models/blog'
+require_relative 'models/post'
 require 'date'
-require "pry"
+require 'pry'
 
-blog = Blog.new
+blog  = Blog.new
 post1 = Post.new('Hello! This is a welcome post.', Date.today, 'Your new post')
 post2 = Post.new('Hello! This is the 2nd post.', '28-10-2016', 'Your 2nd post')
 post3 = Post.new('Hello! This is the 3rd post.', '29-10-2016', 'Your 3rd post')
@@ -28,7 +28,7 @@ post '/' do
   content = params[:post_content]
   new_post = Post.new(content, date, title)
   blog.add_post(new_post)
-  redirect ('/')
+  redirect('/')
 end
 
 get '/posts' do

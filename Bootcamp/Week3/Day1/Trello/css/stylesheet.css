@@ -1,0 +1,63 @@
+body {
+  background-image: url('/Assets/trello.jpg')
+}
+
+.header {
+  display: flex;
+  background-color: rgba(247, 247, 247, 0.3);
+  justify-content: space-between;
+  padding-top: 1%;
+  color: white;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+}
+
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+}
+
+.header-centre {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-top: 1%;
+}
+
+.toolbar-left {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 50%;
+  padding-left: 2%;
+}
+
+.toolbar-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.toolbar-cal {
+  padding-right: 10%
+}
+
+.toolbar-menu {
+  padding-right: 2%;
+/*/
+}
