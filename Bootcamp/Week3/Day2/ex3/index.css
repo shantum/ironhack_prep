@@ -1,0 +1,24 @@
+.main {
+    background-color: #E6E6E6;
+}
+
+.header {
+    padding-top: 5%;
+    padding-left: 0%;
+}
+
+.img_circle {
+    border-radius: 50%;
+
+}
+
+.profile-update {
+    margin: 0%;
+    padding-top: 3.2%;
+    margin-left: 3%;
+    color: #808080;
+}
+
+.link {
+    color: #0080FF;
+}
