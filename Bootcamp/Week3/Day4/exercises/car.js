@@ -23,7 +23,7 @@ function Dog(age) {
     Animal.call(this, age); //call is a function that calls another function
 }
 
-Dog.prototype = new Animal(); //needs to be added before instantiation!
+Dog.prototype = new Animal(); //needs to be added before instantiation
 
 var dog = new Dog('10 years');
 
