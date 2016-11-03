@@ -24,5 +24,8 @@ function blastOff(time) {
 }
 
 
-//call the blastoff function
-blastOff(5);
+var wait1000 = new Promise(function(resolve, reject) {
+    setTimeout(resolve, 1000)
+}).then(function () {
+    console.log('Yay!')
+})
