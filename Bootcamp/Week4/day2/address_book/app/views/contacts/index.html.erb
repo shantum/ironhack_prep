@@ -1,0 +1,25 @@
+
+<div class="table-responsive" id='contacts_table'>
+<table class='table'>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th>Created On</th>
+    <th>Edit/Modify</th>
+  </tr>
+  <% @contacts.order('Name ASC').each do |contact| %>
+    <tr>
+      <td><%= contact.Name %></td>
+      <td><%= contact.Email %></td>
+      <td><%= contact.Phone %></td>
+      <td><%= contact.Address %></td>
+      <td><%= contact.created_at.strftime('%d/%m/%Y') %></td>
+      <td><%= button_to "Edit", :method => :destroy %></td>
+    </tr>
+  <% end %>
+</table>
+</div>
+
+<a href="contacts/new" class="btn btn-primary">Create New Contact</a>
