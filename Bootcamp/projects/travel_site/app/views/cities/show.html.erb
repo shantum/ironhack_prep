@@ -1,0 +1,26 @@
+<div class='main'>
+  <p id="notice"><%= notice %></p>
+
+  <h2><%= @city.name %></h2>
+  
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJP9A_FgiHBDkRzXZQvg6oKYE&key=AIzaSyCJDSSvbe4lz8h-ZWW6bYxQGkJBD6N5ltE" allowfullscreen></iframe>
+
+  <p>
+    <strong>State:</strong>
+    <%= @city.state %>
+  </p>
+
+  <p>
+    <strong>Region:</strong>
+    <%= @city.region %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @city.description %>
+  </p>
+
+  <%= link_to 'Edit', edit_city_path(@city) %> |
+  <%= link_to 'Back', cities_path %>
+</div>
+

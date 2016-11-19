@@ -1,0 +1,34 @@
+<h3>Artist Search Page</h3>
+
+<form action="" id='artist_search'>
+Artist: <input type="text" name="Artist" id='artist' required>
+<input type="submit" value="Submit" id='submit'>
+</form>
+
+<div id='spotify_results'>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+
+<script>
+'use strict';
+var query = $('#artist').val()
+
+$(document).ready(function () {
+  $('#submit').click(function(e) {
+    e.preventDefault();
+
+    $.getJSON('https://api.spotify.com/v1/search?' + query, function(result){
+      $.each(result, function(i, field){
+        $('#spotify_results').append(field + " ");
+      })
+    })
+  })
+});
+
+</script>

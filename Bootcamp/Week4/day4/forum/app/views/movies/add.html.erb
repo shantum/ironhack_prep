@@ -1,0 +1,7 @@
+<% if @exists %>
+<h3><%= @sorry %></h3>
+<% end %>
+
+<h2><% @all_movies.each do |movie|%></h2>
+<p><%= movie.title %></p>
+<% end %>

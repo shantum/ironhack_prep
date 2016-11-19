@@ -1,0 +1,20 @@
+<h1>Here are your movie results</h1>
+
+<table class='table table-striped table-bordered'>
+  <% @list.each do |movie| %>
+  <tr>
+    <th width=20%>Poster</th>
+    <th width=20%>Title</th>
+    <th width=7%>Release Date</th>
+    <th width=50%>Synopsis</th>
+    <th witdth=7%>Select Movie</th>
+  </tr>
+  <tr>
+    <td><img src="<%= @base_url + movie.poster_path.to_s %>" alt="<%= movie.title + 'poster' %>" width=50% height=50%></td>
+    <td><%= movie.title %></td>
+    <td><%= movie.release_date %></td>
+    <td><%= movie.overview %></td>
+    <td><%= button_to 'Add to Site', new_movie_path, params: {'title' => movie.title, 'release_date' => movie.release_date, 'synopsis' => movie.overview, 'poster_path' => @base_url + movie.poster_path.to_s} %></td>
+  </tr>
+<% end %>
+</table>
