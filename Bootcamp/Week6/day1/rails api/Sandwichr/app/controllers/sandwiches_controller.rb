@@ -15,4 +15,13 @@ class SandwichesController < ApplicationController
     params.require(:sandwich).permit(:name, :bread_type)
   end
 
+  def show
+    sandwich = Sandwich.find_by(id: params[:id])
+    unless sandwich
+      render json: {error: "sandwich not found"},
+        status: 404
+      return
+    end
+    render json: sandwich
+  end
 end
