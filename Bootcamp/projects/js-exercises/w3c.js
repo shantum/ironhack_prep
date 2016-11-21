@@ -52,3 +52,6 @@ function exponent(num, power) {
  }
 
 console.log(exponent(8, 2))
+
+//fibonacci
+function fibonacci(length)
