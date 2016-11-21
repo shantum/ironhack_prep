@@ -1,50 +1,50 @@
 class IngredientsController < ApplicationController
   def index
-    sandwiches = Ingredient.all
-    render json: sandwiches
+    ingredients = Ingredient.all
+    render json: ingredients
   end
 
   def create
-    sandwich = Ingredient.create(sandwich_params)
-    render json: sandwich
+    ingredient = Ingredient.create(ingredient_params)
+    render json: ingredient
   end
 
   def show
-    sandwich = Ingredient.find_by(id: params[:id])
-    unless sandwich
-      render json: {error: "sandwich not found"},
+    ingredient = Ingredient.find_by(id: params[:id])
+    unless ingredient
+      render json: {error: "ingredient not found"},
         status: 404
       return
     end
-    render json: sandwich
+    render json: ingredient
   end
 
   def update
-    sandwich = Ingredient.find_by(id: params[:id])
-    unless sandwich
-      render json: {error: "sandwich not found"},
+    ingredient = Ingredient.find_by(id: params[:id])
+    unless ingredient
+      render json: {error: "ingredient not found"},
         status: 404
       return
     end
-    sandwich.update(sandwich_params)
-    render json: sandwich
+    ingredient.update(ingredient_params)
+    render json: ingredient
   end
 
   def destroy
-    sandwich = Ingredient.find_by(id: params[:id])
-    unless sandwich
-      render json: {error: "sandwich not found"},
+    ingredient = Ingredient.find_by(id: params[:id])
+    unless ingredient
+      render json: {error: "ingredient not found"},
         status: 404
       return
     end
-    sandwich.destroy
-    render json: sandwich
+    ingredient.destroy
+    render json: ingredient
   end
 
   private
 
-  def sandwich_params
-    params.require(:sandwich).permit(:name, :bread_type)
+  def ingredient_params
+    params.require(:ingredient).permit(:name)
   end
 
 end
