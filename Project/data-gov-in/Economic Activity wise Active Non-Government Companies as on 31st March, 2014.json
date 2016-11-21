@@ -1,0 +1,266 @@
+{
+  "help": "Search a datastore table. :param resource_id: id or alias of the data that is going to be selected.",
+  "success": true,
+  "total_records": "16",
+  "count": 16,
+  "fields": {
+    "id": {
+      "type": "serial",
+      "size": "normal",
+      "unsigned": true,
+      "not null": true,
+      "description": ""
+    },
+    "timestamp": {
+      "type": "int",
+      "size": "normal",
+      "unsigned": true,
+      "not null": false,
+      "description": "The Unix timestamp for the data."
+    },
+    "sector": {
+      "type": "varchar",
+      "size": "normal",
+      "length": "255",
+      "not null": false,
+      "description": ""
+    },
+    "economic_activity": {
+      "type": "varchar",
+      "size": "normal",
+      "length": "255",
+      "not null": false,
+      "description": ""
+    },
+    "no__of_companies___public": {
+      "type": "int",
+      "size": "normal",
+      "not null": false,
+      "description": ""
+    },
+    "authorized_capital___public": {
+      "type": "int",
+      "size": "normal",
+      "not null": false,
+      "description": ""
+    },
+    "no__of_companies___private": {
+      "type": "int",
+      "size": "normal",
+      "not null": false,
+      "description": ""
+    },
+    "authorized_capital___private": {
+      "type": "int",
+      "size": "normal",
+      "not null": false,
+      "description": ""
+    },
+    "no__of_companies___total": {
+      "type": "int",
+      "size": "normal",
+      "not null": false,
+      "description": ""
+    },
+    "authorized_capital___total": {
+      "type": "int",
+      "size": "normal",
+      "not null": false,
+      "description": ""
+    }
+  },
+  "records": [
+    {
+      "id": "3",
+      "timestamp": "1432701626",
+      "sector": "Agriculture & Allied Activities",
+      "economic_activity": "Agriculture & Allied Activities Total",
+      "no__of_companies___public": "2756",
+      "authorized_capital___public": "30799",
+      "no__of_companies___private": "21206",
+      "authorized_capital___private": "14135",
+      "no__of_companies___total": "23962",
+      "authorized_capital___total": "44934"
+    },
+    {
+      "id": "263",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "vii) Insurance",
+      "no__of_companies___public": "127",
+      "authorized_capital___public": "38321",
+      "no__of_companies___private": "616",
+      "authorized_capital___private": "1071",
+      "no__of_companies___total": "743",
+      "authorized_capital___total": "39392"
+    },
+    {
+      "id": "23",
+      "timestamp": "1432701626",
+      "sector": "Industry",
+      "economic_activity": "Industry Total",
+      "no__of_companies___public": "24965",
+      "authorized_capital___public": "973045",
+      "no__of_companies___private": "303778",
+      "authorized_capital___private": "618406",
+      "no__of_companies___total": "328743",
+      "authorized_capital___total": "1591451"
+    },
+    {
+      "id": "283",
+      "timestamp": "1432701626",
+      "sector": "Unclassified",
+      "economic_activity": "Unclassified Total",
+      "no__of_companies___public": "4614",
+      "authorized_capital___public": "147165",
+      "no__of_companies___private": "36978",
+      "authorized_capital___private": "82113",
+      "no__of_companies___total": "41592",
+      "authorized_capital___total": "229278"
+    },
+    {
+      "id": "43",
+      "timestamp": "1432701626",
+      "sector": "Industry",
+      "economic_activity": "i) Manufacturing",
+      "no__of_companies___public": "17521",
+      "authorized_capital___public": "455934",
+      "no__of_companies___private": "185082",
+      "authorized_capital___private": "341286",
+      "no__of_companies___total": "202603",
+      "authorized_capital___total": "797220"
+    },
+    {
+      "id": "303",
+      "timestamp": "1432701626",
+      "sector": "Grand Total",
+      "economic_activity": "Total",
+      "no__of_companies___public": "61381",
+      "authorized_capital___public": "1824878",
+      "no__of_companies___private": "883895",
+      "authorized_capital___private": "1260905",
+      "no__of_companies___total": "945276",
+      "authorized_capital___total": "3085783"
+    },
+    {
+      "id": "63",
+      "timestamp": "1432701626",
+      "sector": "Industry",
+      "economic_activity": "ii) Construction",
+      "no__of_companies___public": "5217",
+      "authorized_capital___public": "140032",
+      "no__of_companies___private": "97214",
+      "authorized_capital___private": "170313",
+      "no__of_companies___total": "102431",
+      "authorized_capital___total": "310345"
+    },
+    {
+      "id": "83",
+      "timestamp": "1432701626",
+      "sector": "Industry",
+      "economic_activity": "iii) Electricity; Gas & Water",
+      "no__of_companies___public": "1535",
+      "authorized_capital___public": "334660",
+      "no__of_companies___private": "10905",
+      "authorized_capital___private": "94118",
+      "no__of_companies___total": "12440",
+      "authorized_capital___total": "428778"
+    },
+    {
+      "id": "103",
+      "timestamp": "1432701626",
+      "sector": "Industry",
+      "economic_activity": "iv) Mining & Quarrying",
+      "no__of_companies___public": "692",
+      "authorized_capital___public": "42419",
+      "no__of_companies___private": "10577",
+      "authorized_capital___private": "12689",
+      "no__of_companies___total": "11269",
+      "authorized_capital___total": "55108"
+    },
+    {
+      "id": "123",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "Services Total",
+      "no__of_companies___public": "29046",
+      "authorized_capital___public": "673869",
+      "no__of_companies___private": "521933",
+      "authorized_capital___private": "546251",
+      "no__of_companies___total": "550979",
+      "authorized_capital___total": "1220120"
+    },
+    {
+      "id": "143",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "i) Business Services",
+      "no__of_companies___public": "6742",
+      "authorized_capital___public": "213249",
+      "no__of_companies___private": "194492",
+      "authorized_capital___private": "144468",
+      "no__of_companies___total": "201234",
+      "authorized_capital___total": "357717"
+    },
+    {
+      "id": "163",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "ii) Real Estate and Renting",
+      "no__of_companies___public": "3728",
+      "authorized_capital___public": "29433",
+      "no__of_companies___private": "66610",
+      "authorized_capital___private": "56841",
+      "no__of_companies___total": "70338",
+      "authorized_capital___total": "86274"
+    },
+    {
+      "id": "183",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "iii) Trading",
+      "no__of_companies___public": "6087",
+      "authorized_capital___public": "97657",
+      "no__of_companies___private": "138369",
+      "authorized_capital___private": "121528",
+      "no__of_companies___total": "144456",
+      "authorized_capital___total": "219185"
+    },
+    {
+      "id": "203",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "iv) Community; personal & Social Services",
+      "no__of_companies___public": "2967",
+      "authorized_capital___public": "64821",
+      "no__of_companies___private": "55497",
+      "authorized_capital___private": "49614",
+      "no__of_companies___total": "58464",
+      "authorized_capital___total": "114435"
+    },
+    {
+      "id": "223",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "v) Transport; storage & communications",
+      "no__of_companies___public": "1347",
+      "authorized_capital___public": "77246",
+      "no__of_companies___private": "28992",
+      "authorized_capital___private": "39088",
+      "no__of_companies___total": "30339",
+      "authorized_capital___total": "116334"
+    },
+    {
+      "id": "243",
+      "timestamp": "1432701626",
+      "sector": "Services",
+      "economic_activity": "vi) Finance",
+      "no__of_companies___public": "8048",
+      "authorized_capital___public": "153142",
+      "no__of_companies___private": "37357",
+      "authorized_capital___private": "133641",
+      "no__of_companies___total": "45405",
+      "authorized_capital___total": "286783"
+    }
+  ]
+}
